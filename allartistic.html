@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>All Artistic</title>
+  </head>
+  <body>
+    <style>
+      .page-title {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        font-weight: bold;
+        font-size: 35px;
+        color: white;
+        background-color: rgb(4, 2, 11);
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align: left;
+        margin-top: 0px;
+        margin-bottom: 5px;
+      }
+      .page-title:hover {
+        cursor: pointer;
+        color: red;
+      }
+      .search-bar {
+        border-radius: 4px;
+        width: 500px;
+        height: 20px;
+        display: block;
+        font-size: 20px;
+        text-align: center;
+        font-family: arial;
+        color: black;
+      }
+      .our-products {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        font-size: 10px;
+        color: white;
+        vertical-align: top;
+        background-color: rgb(12, 131, 236);
+        border-radius: 20px;
+        height: 35px;
+        font-size: 15px;
+        margin-top: 5px;
+        margin-left: 280px;
+        border-width: 0px;
+        width: 80;
+      }
+      .our-products:hover {
+        cursor: pointer;
+        background-color: white;
+        color: black;
+        box-shadow: 2px 2px 5px rgb(173, 170, 170);
+        height: 38px;
+        width: 83px;
+      }
+      .our-services {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        font-size: 10px;
+        color: white;
+        vertical-align: top;
+        background-color: rgb(12, 131, 236);
+        border-radius: 20px;
+        height: 35px;
+        font-size: 15px;
+        margin-top: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+        border-width: 0px;
+        width: 80;
+      }
+      .our-services:hover {
+        cursor: pointer;
+        background-color: white;
+        color: black;
+        box-shadow: 2px 2px 5px rgb(173, 170, 170);
+      }
+      .your-order {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        font-size: 10px;
+        color: white;
+        vertical-align: top;
+        background-color: rgb(12, 131, 236);
+        border-radius: 20px;
+        height: 35px;
+        font-size: 15px;
+        margin-top: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+        border-width: 0px;
+        width: 80;
+      }
+      .your-order:hover {
+        cursor: pointer;
+        background-color: white;
+        color: black;
+        box-shadow: 2px 2px 5px rgb(173, 170, 170);
+      }
+      .our-customers {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        font-size: 10px;
+        color: white;
+        vertical-align: top;
+        background-color: rgb(12, 131, 236);
+        border-radius: 20px;
+        height: 35px;
+        font-size: 15px;
+        margin-top: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+        border-width: 0px;
+        width: 80;
+      }
+      .our-customers:hover {
+        cursor: pointer;
+        background-color: white;
+        color: black;
+        box-shadow: 2px 2px 5px rgb(173, 170, 170);
+      }
+      .our-gallery {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        font-size: 10px;
+        color: white;
+        vertical-align: top;
+        background-color: rgb(12, 131, 236);
+        border-radius: 20px;
+        height: 35px;
+        font-size: 15px;
+        margin-top: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+        border-width: 0px;
+        width: 80;
+      }
+      .our-gallery:hover {
+        cursor: pointer;
+        background-color: white;
+        color: black;
+        box-shadow: 2px 2px 5px rgb(173, 170, 170);
+      }
+      .contact-us {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        font-size: 10px;
+        color: white;
+        vertical-align: top;
+        background-color: rgb(12, 131, 236);
+        border-radius: 20px;
+        height: 35px;
+        font-size: 15px;
+        margin-top: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+        border-width: 0px;
+        width: 80;
+      }
+      .contact-us:hover {
+        cursor: pointer;
+        background-color: white;
+        color: black;
+        box-shadow: 2px 2px 5px rgb(173, 170, 170);
+      }
+      .log-in {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        font-size: 10px;
+        color: white;
+        vertical-align: top;
+        background-color: rgb(12, 131, 236);
+        border-radius: 20px;
+        height: 35px;
+        font-size: 15px;
+        margin-top: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+        border-width: 0px;
+        width: 80;
+      }
+      .log-in:hover {
+        cursor: pointer;
+        background-color: white;
+        color: black;
+        box-shadow: 2px 2px 5px rgb(173, 170, 170);
+      }
+      .sign-up {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        font-size: 10px;
+        color: white;
+        vertical-align: top;
+        background-color: rgb(12, 131, 236);
+        border-radius: 20px;
+        height: 35px;
+        font-size: 15px;
+        margin-top: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+        border-width: 0px;
+        width: 80;
+      }
+      .sign-up:hover {
+        cursor: pointer;
+        background-color: white;
+        color: black;
+        box-shadow: 2px 2px 5px rgb(173, 170, 170);
+      }
+      .landing-msg {
+        font-size: 100px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: white;
+        background-color: rgb(0, 187, 255);
+        margin-top: 5px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-weight: bold;
+        margin-bottom: 0px;
+        display: inline-block;
+      }
+      .tag-line {
+        font-size: 30px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: rgb(8, 77, 155);
+        margin-top: 10px;
+        margin-bottom: 0px;
+        background-color: gold;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 30px;
+      }
+      .tag-line:hover {
+        cursor: pointer;
+      }
+      .Customize {
+        color: white;
+        background-color: black;
+        height: 50px;
+        width: 200px;
+        border-radius: 5px;
+        margin-left: 10px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 250;
+        margin-top: 10px;
+        margin-bottom: 0px;
+      }
+      .Customize:hover {
+        cursor: pointer;
+        background-color: white;
+        color: black;
+      }
+      .videography {
+        color: black;
+        background-color: white;
+        border-width: 2px;
+        border-radius: 5px;
+        margin-top: 5px;
+        height: 50px;
+        width: 200px;
+        margin-left: 40px;
+        margin-top: 10px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 250;
+      }
+      .videography:hover {
+        cursor: pointer;
+        color: white;
+        background-color: aqua;
+      }
+      .girl-pic {
+        display: inline;
+      }
+      .design-products {
+        background-color: rgb(0, 174, 255);
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        padding-top: 0px;
+        padding-bottom: 500px;
+        padding-left: 10px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+      }
+      .web-dev {
+        color: white;
+        background-color: rgb(17, 5, 230);
+        border-width: 2px;
+        border-radius: 5px;
+        margin-top: 10px;
+        height: 50px;
+        width: 200px;
+        margin-left: 40px;
+        margin-top: 5px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 250;
+        border-width: 0px;
+      }
+      .web-dev:hover {
+        cursor: pointer;
+        background-color: black;
+      }
+      .tenje-1 {
+        height: 300px;
+        margin-left: 0px;
+      }
+      .know-more {
+        background-color: black;
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 30px;
+        text-align: center;
+        padding-top: 7px;
+        padding-bottom: 5px;
+        text-decoration-line: underline;
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+      .follow {
+        background-color: black;
+        color: white;
+        margin-top: 0px;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        font-size: 25px;
+        display: block;
+      }
+      .twitter {
+        height: 30px;
+      }
+    </style>
+    <p class="page-title">
+      All Artistic Impressions
+      <button class="our-products">Our Products</button>
+      <button class="our-services">Our Services</button>
+      <button class="your-order">Your Orders</button>
+      <button class="our-customers">Our Customers</button>
+      <button class="our-gallery">Our Gallery</button>
+      <button class="contact-us">Contact Us</button>
+      <button class="log-in">Log In</button>
+      <button class="sign-up">Sign Up</button>
+    </p>
+    <input class="search-bar" type="text" placeholder="Search Here" />
+    <p class="landing-msg">
+      Experience a World of Colours and Artistry
+      <img class="girl-pic" src="pictures/girl.png" />
+      <img class="create-pic" src="pictures/phone.png" />
+      <img class="believe-pic" src="pictures/tenje.png" />
+    </p>
+    <p class="tag-line">Create Quality Videos and Graphics</p>
+    <button class="Customize">GRAPHIC DESIGN</button>
+    <button class="videography">VIDEO PRODUCTION</button>
+    <button class="web-dev">WEB DEVELOPMENT</button>
+    <p class="design-products">Design Products</p>
+    <img class="tenje-2" src="pictures/tenje 2.png" />
+    <img class="tenje-1" src="pictures/tenje 1.png" />
+    <img class="tenje-3" src="pictures/tenje 3.png" />
+    <p class="know-more">Know More About Us</p>
+    <p class="follow">Follow us on social media</p>
+    <img class="twitter" src="pictures/twitter.png" />
+  </body>
+</html>
